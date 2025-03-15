@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -35,4 +35,50 @@
   to {
     transform: rotate(360deg);
   }
+} */
+/* App.css */
+
+/* General styles */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+}
+
+/* White section */
+.white-section {
+  background-color: white;
+  color: black;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 1s ease,color 1s ease;
+}
+/* Black section */
+.black-section {
+  background-color: black;
+  color: white;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 1s ease, color 1s ease;
+}
+
+/* Hover effect for smooth transition */
+.container:hover .white-section {
+  background-color: black;
+  color: white;
+}
+
+.container:hover .black-section {
+  background-color: white;
+  color: black;
 }
